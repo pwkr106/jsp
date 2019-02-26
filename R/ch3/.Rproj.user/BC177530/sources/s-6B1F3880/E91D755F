@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1549953768582.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2394482175",
+    "id" : "E91D755F",
+    "lastKnownWriteTime" : 1549955712,
+    "last_content_update" : 1549955712447,
+    "path" : "C:/Users/bigdata/Desktop/workspace/R/ch3/3-3.R",
+    "project_path" : "3-3.R",
+    "properties" : {
+        "cursorPosition" : "15,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

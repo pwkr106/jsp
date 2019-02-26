@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1550132545240.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2340980856",
+    "id" : "31F68FF8",
+    "lastKnownWriteTime" : 1550132965,
+    "last_content_update" : 1550132965,
+    "path" : "C:/Users/bigdata/Desktop/workspace/R/ch5/5-2(T).R",
+    "project_path" : "5-2(T).R",
+    "properties" : {
+        "cursorPosition" : "36,0",
+        "scrollLine" : "22"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

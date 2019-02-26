@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>팜스토리</title>
+    <style>
+    /* 초기화 코드 */
+    * {
+      margin: 0;
+      padding: 0;
+      font: normal 12px '돋움';
+    }
+
+    ul, ol { list-style: none; }
+    a { text-decoration: none; color: #111; }
+    /* 공통 */
+    #wrapper {
+      width: 980px;
+      height: auto;
+      border: 1px solid red;
+      margin: 0 auto;
+    }
+    /* 헤더 */
+    header {
+      position: relative;
+      width: 100%;
+      height: 142px;
+      border: 1px solid blue;
+      box-sizing: border-box;
+      background: url('./img/head_top_line.png') no-repeat;
+    }
+    header > .logo {
+      position: absolute;
+      left: 50%;
+      top: 20px;
+      margin-left: -95px;
+    }
+    header > p {
+      float: right;
+      margin-top: 12px;
+    }
+    header > img {
+      float: right;
+      clear: right;
+      margin-top: 26px;
+    }
+    header > .gnb {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      box-sizing: border-box;
+    }
+    header > .gnb > li{
+      float: left;
+      width: 20%;
+      height: 100%;
+      border-left: 1px solid #fff;
+      border-right: 1px solid #fff;
+      box-sizing: border-box;
+    }
+    header > .gnb > li > a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-size: 0;
+      border-top: 3px solid #3f3f3f;
+      box-sizing: border-box;
+      background-position-y: 6px;
+      background-repeat: no-repeat;
+    }
+
+    header > .gnb > li:nth-child(1) > a {background-image: url('./img/head_menu1.png');}
+    header > .gnb > li:nth-child(2) > a {background-image: url('./img/head_menu2.png');}
+    header > .gnb > li:nth-child(3) > a {background-image: url('./img/head_menu3.png');}
+    header > .gnb > li:nth-child(4) > a {background-image: url('./img/head_menu4.png');}
+    header > .gnb > li:nth-child(5) > a {background-image: url('./img/head_menu5.png');}
+
+    header > .gnb > li:nth-child(1) > a:hover {background-image: url('./img/head_menu1_ov.png');}
+    header > .gnb > li:nth-child(2) > a:hover {background-image: url('./img/head_menu2_ov.png');}
+    header > .gnb > li:nth-child(3) > a:hover {background-image: url('./img/head_menu3_ov.png');}
+    header > .gnb > li:nth-child(4) > a:hover {background-image: url('./img/head_menu4_ov.png');}
+    header > .gnb > li:nth-child(5) > a:hover {background-image: url('./img/head_menu5_ov.png');}
+    /* 메인 */
+    main {
+      width: 100%;
+      height: auto;
+      border: 1px solid blue;
+      box-sizing: border-box;
+    }
+      main > div{
+        width: 100%;
+        border: 1px solid green;
+        box-sizing: border-box;
+        margin-top: 10px;
+      }
+      main > .slider {height: 312px;}
+      main > .banner {height: 74px;}
+      main > .lastest {height: 186px;}
+      main > .info {height: 144px;}
+    /* 푸터 */
+    footer {
+      width: 100%;
+      height: 118px;
+      border: 1px solid blue;
+      box-sizing: border-box;
+      margin-top: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <a href="#" class="logo"><img src="./img/logo.png" alt="로고"></a>
+        <p>
+          <a href="#">HOME |</a>
+          <a href="#">로그인 |</a>
+          <a href="#">회원가입 |</a>
+          <a href="#">고객센터</a>
+        </p>
+        <img src="./img/head_txt_img.png" alt="3만원 이상 무료배송"/>
+        <ul class="gnb">
+          <li><a href="#">팜스토리 소개</a></li>
+          <li><a href="#">장보기</a></li>
+          <li><a href="#">농작물이야기</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">커뮤니티</a></li>
+        </ul>
+      </header>
+      <main>
+        <div class="slider"></div>
+        <div class="banner"></div>
+        <div class="lastest"></div>
+        <div class="info"></div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>

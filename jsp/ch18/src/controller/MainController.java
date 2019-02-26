@@ -81,7 +81,6 @@ public class MainController extends HttpServlet {
 		String uri 	= req.getRequestURI();
 		String action = uri.substring(path.length());
 		
-		//String view = null;
 		
 		CommonAction instance = (CommonAction)instances.get(action);
 		String view = instance.requestProc(req, resp);

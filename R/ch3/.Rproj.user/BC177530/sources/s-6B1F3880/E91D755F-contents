@@ -1,0 +1,15 @@
+# 데이터프레임 파생변수
+library(readxl)
+
+df_exam <- read_excel('../data/exam.xlsx')
+
+# 파생변수 생성
+df_exam$sum <- df_exam$math + df_exam$english + df_exam$science
+View(df_exam)
+
+df_exam$mean <- df_exam$sum / 3
+
+df_exam$greade <- ifelse(df_exam$mean >= 90, 'A', 
+                         ifelse(df_exam$mean >= 80, 'B',
+                          ifelse(df_exam$mean >= 70, 'C',
+                            ifelse(df_exam$mean >= 60, 'D','F'))))

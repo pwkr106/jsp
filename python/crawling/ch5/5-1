@@ -1,0 +1,42 @@
+"""
+날짜 : 19/02/19
+이름 : 김지훈
+내용 : 파이썬 데이터 분석실습
+"""
+# numpy 패키지 실습하기
+import numpy as np
+
+# 벡터 생성
+vec1 = np.array([1, 2, 3, 4, 5])
+print('vec1 :', vec1)
+
+for i in range(5):
+    print('vec1[%d] : %d' % (i, vec1[i]))
+
+# 행렬생성
+mat1 = np.array([[1, 2], [3, 4]])
+mat2 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+mat3 = np.ones([2, 4])
+mat4 = np.zeros([3, 2])
+print('mat1 :', mat1)
+print('mat2 :', mat2)
+print('mat3 :', mat3)
+print('mat4 :', mat4)
+
+# 단위행렬
+mat5 = np.identity(2)
+mat6 = np.identity(3)
+print('mat5 :', mat5)
+print('mat6 :', mat6)
+
+# 역행렬
+mat7 = np.linalg.inv(mat1)
+print('mat7 : ', mat7)
+
+mat8 = mat1.dot(mat7)
+print('mat8 :', mat8)
+mat9 = mat8.round()
+print('mat9 :', mat9)
+
+# 행렬 슬라이싱
+mat10 = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])

@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1550123414942.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5DB6C456",
+    "lastKnownWriteTime" : 7308604914264011873,
+    "last_content_update" : 1550123414942,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "146C7BFF",
+        "caption" : "age_income",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=age_income&cache_key=146C7BFF",
+        "displayedObservations" : 69,
+        "environment" : "",
+        "object" : "age_income",
+        "preview" : 0,
+        "totalObservations" : 69,
+        "variables" : 2
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

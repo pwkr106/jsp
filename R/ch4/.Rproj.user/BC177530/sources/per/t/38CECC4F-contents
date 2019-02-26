@@ -1,0 +1,37 @@
+# 나이대별 소득분포
+# p1002_8aq1 : 소득컬럼
+
+library(dplyr)
+library(ggplot2)
+
+
+kowep2015 <- read.csv('../data/koweps_2015.csv')
+# 컬럼명 변경
+kowep2015 <- kowep2015 %>% select(h10_g3, h10_g4, h10_g10, h10_g11, h10_eco9, p1002_8aq1)
+kowep2015 <- rename(kowep2015, 
+                    gender=h10_g3, 
+                    birth=h10_g4,
+                    married=h10_g10,
+                    religion=h10_g11,
+                    job=h10_eco9,
+                    income=p1002_8aq1
+)
+
+View(kowep2015)
+
+# 나이 파생변수 추가
+kowep2015$age <- 2015 - kowep2015$birth + 1
+View(kowep2015)
+summary(kowep2015$age)
+
+
+# 연령별 월급컬럼 추가, 계산 age_income 
+age_income <- kowep2015 %>% 
+  filter(!is.na(income)) %>%              # 1. 월급na값(결측치) 제거
+  group_by(age) %>%                       # 2. 연령별 정렬 후 평균치 계산
+  summarise(mean_income = mean(income))
+
+# 연령별 총소득 / 연령수
+ggplot(data=age_income, aes(x=age, y=mean_income))+geom_line()
+
+View(age_income)

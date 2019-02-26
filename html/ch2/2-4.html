@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body > div{
+        display: inline-block;
+        width:300px;
+        height:300px;
+        border:1px dotted black;
+      }
+
+        .ex1 > div {
+          position: absolute;
+            width : 200px;
+            height: 200px;
+            background: green;
+          }
+          .ex1 {
+            position: relative;
+          }
+
+          .ex1 > div:nth-child(1){right: 0px; top: 0px;}
+
+        .ex2 > div {
+          position: absolute;
+            width : 200px;
+            height: 200px;
+            background: green;
+          }
+          .ex2 {
+            position: relative;
+          }
+
+        .ex2 > div:nth-child(1){right: 0px; bottom: 0px;}
+
+          .ex3 > div {
+            position: absolute;
+            width : 200px;
+            height: 200px;
+            background: green;
+          }
+          .ex3 > div:nth-child(2) {
+            width : 100px;
+            height: 100px;
+            background: blue;
+          }
+          .ex3 {
+            position: relative;
+          }
+
+        .ex3 > div:nth-child(1){right: 0px; top: 0px;}
+        .ex3 > div:nth-child(2){right: 0px; top: 100px;}
+
+
+        .ex4 > div {
+          position: absolute;
+            width : 200px;
+            height: 200px;
+            background: green;
+          }
+          .ex4 > div:nth-child(2) {
+            width : 100px;
+            height: 100px;
+            background: blue;
+          }
+          .ex4 {
+            position: relative;
+          }
+
+        .ex4 > div:nth-child(1){left: 0px; bottom: 0px;}
+        .ex4 > div:nth-child(2){left: 0px; bottom: 0px;}
+
+        .ex5 > div {
+          position: absolute;
+            width : 200px;
+            height: 200px;
+            background: green;
+          }
+          .ex5 > div:nth-child(2) {
+            width : 100px;
+            height: 100px;
+            background: blue;
+          }
+          .ex5 {
+            position: relative;
+          }
+
+        .ex5 > div:nth-child(1){left: 50px; top: 0px;}
+        .ex5 > div:nth-child(2){left: 100px; top: 0px;}
+
+        .ex6 > div {
+          position: absolute;
+            width : 200px;
+            height: 200px;
+            background: green;
+          }
+          .ex6 > div:nth-child(2) {
+            width : 100px;
+            height: 100px;
+            background: blue;
+          }
+          .ex6 {
+            position: relative;
+          }
+
+        .ex6 > div:nth-child(1){right: 50px; bottom: 50px;}
+        .ex6 > div:nth-child(2){left: 100px; bottom: 100px;}
+
+        .ex7 > div {
+          position: absolute;
+            width : 100px;
+            height: 100px;
+            background: red;
+          }
+          .ex7 > div:nth-child(2) {
+            width : 100px;
+            height: 100px;
+            background: green;
+          }
+          .ex7 > div:nth-child(3) {
+            width : 100px;
+            height: 100px;
+            background: blue;
+          }
+          .ex7 > div:nth-child(4) {
+            width : 100px;
+            height: 100px;
+            background: orange;
+          }
+          .ex7 {
+            position: relative;
+          }
+
+        .ex7 > div:nth-child(1){left: 100px; top: 0px;}
+        .ex7 > div:nth-child(2){left: 0px; top: 100px;}
+        .ex7 > div:nth-child(3){right: 0px; top: 100px;}
+        .ex7 > div:nth-child(4){left: 100px; bottom: 0px;}
+
+        .ex8 > div {
+          position: absolute;
+            width : 100px;
+            height: 100px;
+            background: red;
+          }
+          .ex8 > div:nth-child(2) {
+            width : 100px;
+            height: 100px;
+            background: green;
+          }
+          .ex8 > div:nth-child(3) {
+            width : 100px;
+            height: 100px;
+            background: orange;
+          }
+          .ex8 > div:nth-child(4) {
+            width : 100px;
+            height: 100px;
+            background: pink;
+          }
+          .ex8 > div:nth-child(5) {
+            width : 100px;
+            height: 100px;
+            background: blue;
+          }
+          .ex8 {
+            position: relative;
+          }
+
+          .ex8 > div:nth-child(1){left: 0px; top: 0px;}
+          .ex8 > div:nth-child(2){right: 0px; top: 0px;}
+          .ex8 > div:nth-child(3){right: 100px; top: 100px;}
+          .ex8 > div:nth-child(4){left: 0px; bottom: 0px;}
+          .ex8 > div:nth-child(5){right: 0px; bottom: 0px;}
+
+        .ex9 > div {
+            width : 100px;
+            height: 100px;
+            background: red;
+          }
+          .ex9 > div:nth-child(2) {
+            width : 100px;
+            height: 100px;
+            background: green;
+          }
+          .ex9 > div:nth-child(3) {
+            width : 100px;
+            height: 100px;
+            background: blue;
+          }
+          .ex9 {
+            position: relative;
+          }
+
+        .ex9 > div:nth-child(1){float: left;}
+        .ex9 > div:nth-child(2){float: left;}
+        .ex9 > div:nth-child(3){float: left; clear: left;}
+
+        .ex10 > div {
+            width : 100px;
+            height: 100px;
+            background: red;
+          }
+          .ex10 > div:nth-child(2) {
+            width : 100px;
+            height: 100px;
+            background: green;
+          }
+          .ex10 > div:nth-child(3) {
+            width : 100px;
+            height: 100px;
+            background: blue;
+          }
+          .ex10 {
+            position: relative;
+          }
+
+          .ex10 > div:nth-child(1){float: right;}
+          .ex10 > div:nth-child(2){float: right;}
+          .ex10 > div:nth-child(3){float: right; clear: right;}
+
+        .ex11 > div {
+            width : 100px;
+            height: 100px;
+            background: red;
+          }
+          .ex11 > div:nth-child(2) {
+            width : 100px;
+            height: 100px;
+            background: green;
+          }
+          .ex11 > div:nth-child(3) {
+            width : 100px;
+            height: 100px;
+            background: blue;
+          }
+          .ex11 > div:nth-child(4) {
+            width : 100px;
+            height: 100px;
+            background: orange;
+          }
+          .ex11 > div:nth-child(5) {
+            width : 100px;
+            height: 100px;
+            background: pink;
+          }
+          .ex11 > div:nth-child(6) {
+            width : 100px;
+            height: 100px;
+            background: gold;
+          }
+          .ex11 {
+            position: relative;
+          }
+
+          .ex11 > div:nth-child(1){float: left;}
+          .ex11 > div:nth-child(2){float: left;}
+          .ex11 > div:nth-child(3){float: left; }
+          .ex11 > div:nth-child(4){float: left; clear: left;}
+          .ex11 > div:nth-child(5){float: left; }
+          .ex11 > div:nth-child(6){float: left; clear: left;}
+
+
+
+    </style>
+    <title>2-4</title>
+  </head>
+  <body>
+    <h3>연습문제</h3>
+    <div class="ex1">
+      <div></div>
+    </div>
+    <div class="ex2">
+      <div></div>
+    </div>
+    <div class="ex3">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="ex4">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="ex5">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="ex6">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="ex7">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="ex8">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="ex9">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="ex10">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="ex11">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+  </body>
+</html>
